@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Entities.Billding
+
+namespace Domain.Models
 {
-    public class Payment
+    public class Booking
     {
-        public Guid PaymentId { get; set; }
         public Guid BookingId { get; set; }
-        public decimal Amount { get; set; }
-        public DateTime PaymentDate { get; set; }
+        public Guid UserId { get; set; }
+        public Guid CarId { get; set; }
+        public DateTime BookingDate { get; set; }
         public string Status { get; set; }
     }
 }

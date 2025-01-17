@@ -8,7 +8,7 @@ namespace Contract.Billding
 {
     internal class PurshaseAgreementDto
     {
-        public Guid UgovorId { get; set; }
+        public Guid ContractId { get; set; }
         public Guid BuyerId { get; set; }
         public Guid SellerId { get; set; }
         public Guid CarId { get; set; }
